@@ -21,8 +21,8 @@ bot.on('message', async (msg) => {
   if (text === '/start') {
     bot.sendMessage(chatId, 'Привет! Я бот-конвертер криптовалют.\nИспользуй команды /btc или /eth, чтобы узнать курс.');
   }
-   else if (text.startsWith('/')) {
-      const command = text.slice(1); //убираем '/'
+   else if (text.startsWith(/)) {
+      const command = text.slice(1); 
        if (SUPPORTED_CRYPTO[command]) {
             try {
               const cryptoName = SUPPORTED_CRYPTO[command];
