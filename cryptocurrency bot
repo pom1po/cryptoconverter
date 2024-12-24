@@ -19,7 +19,7 @@ bot.on('message', async (msg) => {
   const text = msg.text.toLowerCase();
 
   if (text === '/start') {
-    bot.sendMessage(chatId, 'Привет! Я бот-конвертер криптовалют.\nИспользуй команды /btc или /eth, чтобы узнать курс.');
+    bot.sendMessage(chatId, 'Привет! Я бот-конвертер криптовалют.Используй команды /btc или /eth, чтобы узнать курс.');
   }
    else if (text.startsWith(/)) {
       const command = text.slice(1); 
